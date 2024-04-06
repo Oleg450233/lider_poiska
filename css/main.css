@@ -1,0 +1,403 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    overflow: auto;
+
+}
+.container{
+    position: relative;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    z-index: 1;
+
+}
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.catalog>div {
+    height: 380px;
+    text-align: center;
+    border: 1px solid rgba(222, 222, 222, 1);
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+.catalog_image>div.text{
+
+
+    margin-left:auto;
+    margin-right: auto;
+}
+.catalog_image{
+    position: relative;
+}
+.catalog_image .img{
+
+    margin-top: 5px;
+}
+
+
+.catalog_image> div.price{
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 33px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container .catalog .catalog_image button{
+     position: absolute;
+    height: 40px;
+    width: 186px;
+    background: #296DC1;
+    color: #FFFFFF;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+.container h1{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top:137px;
+}
+.container ul.main_ul{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 37px;
+    width: 100%;
+
+    top:0;
+    z-index: 100;
+    background: white;
+
+}
+.container ul.main_ul ul>li{
+    list-style: none;
+
+}
+.container ul.main_ul ul>li>a{
+    text-decoration: none;
+
+}
+.container ul.main_ul ul>li:not(:last-child){
+    margin-right: 10px;
+
+}
+.container ul.main_ul ul.last_ul>li img{
+    width: 28px;
+    height: 23px;
+
+}
+ul.last_ul li:first-child{
+    font-size: 23px;
+
+}
+ul.last_ul li:last-child{
+    font-size: 12px;
+
+}
+
+
+
+.container ul.main_ul ul.last_ul>li:not(:first-child):not(:last-child)
+{
+
+    font-size: 16px;
+}
+.sum
+{
+    justify-content: center;
+
+    height: 21px;
+    width: 21px;
+    display: none;
+    background: rgba(0, 168, 45, 1);
+
+    border-radius: 50%;
+
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+
+}
+.sum>span{
+    align-self: center;
+
+}
+
+
+
+
+@media(min-width: 1200px) {
+    .container,.container ul.main_ul {
+        width: 1170px;
+
+    }
+    .catalog>div{
+        width: 270px;
+        height: 380px;
+
+    }
+    .catalog{
+        justify-content: space-between;
+
+    }
+    .catalog_image>div.text{
+        width: 230px;
+        margin-top: 36px;
+    }
+
+}
+@media(max-width: 1199px) and (min-width: 931px){
+
+    .catalog{
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right:20px ;
+
+    }
+    .catalog .catalog_image{
+        width: 270px;
+        height: 380px;
+    }
+
+    .container ul.main_ul ul:first-child{
+        margin-left: 20px;
+
+    }
+    .container ul.main_ul ul:last-child{
+        margin-right: 20px;
+
+    }
+    .catalog_image>div.text{
+        width: 230px;
+        margin-top: 36px;
+    }
+}
+
+@media(max-width: 930px) and (min-width: 749px){
+
+    .catalog{
+
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right:20px ;
+    }
+    .catalog .catalog_image{
+        width: 270px;
+        height: 380px;
+    }
+
+    .catalog_image div.text{
+        width: 210px;
+        margin-top: 36px;
+    }
+}
+
+@media(max-width: 750px) {
+
+    .container .catalog .catalog_image button{
+        display: inline-block;
+
+    }
+}
+@media(min-width: 751px) {
+
+    .container .catalog .catalog_image button{
+        display: none;
+    }
+
+
+
+    }
+
+
+
+
+@media(max-width: 750px) and (min-width: 511px){
+    .catalog_image> div.price{
+
+        bottom: 20px;
+
+    }
+    .catalog{
+        justify-content: center;
+    }
+    .catalog>div{
+        margin-top: -9px;
+        width: 450px;
+        height: 590px;
+        margin-bottom: 51px;
+    }
+    .catalog_image .img{
+        width: 400px;
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    .catalog_image .img>img{
+        width: 334px;
+        height: 399px;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+
+   .catalog_image>span{
+
+        bottom:70px;
+    }
+   .catalog_image>button{
+       bottom: 20px;
+
+
+
+
+    }
+
+    .catalog_image div.text{
+        margin-top: 30px;
+        width: 330px;
+    }
+
+}
+
+@media(max-width: 510px) and (min-width: 450px){
+    .container ul.main_ul ul.last_ul>li:not(:first-child):not(:last-child)
+    {
+        display: none;
+    }
+    .main_ul li img
+    {
+        width: 180px;
+        height: 29px;
+    }
+     .catalog_image> div.price{
+
+        bottom: 74px;
+
+    }
+    .catalog{
+        justify-content: center;
+    }
+    .catalog>div{
+        margin-top: -9px;
+        width: 450px;
+        height: 590px;
+        margin-bottom: 51px;
+    }
+    .catalog_image .img{
+        width: 400px;
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    .catalog_image .img>img{
+        width: 334px;
+        height: 399px;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+
+    .catalog_image>span{
+
+        bottom:70px;
+    }
+    .catalog_image>button{
+        bottom: 20px;
+    }
+    .catalog_image div.text{
+        margin-top: 30px;
+        width: 330px;
+    }
+    .container ul.main_ul ul li img{
+        width: 180px;
+        height: 30px;
+
+    }
+}
+
+
+@media(max-width: 449px) and (min-width: 320px){
+    .container ul.main_ul ul.last_ul>li:not(:first-child):not(:last-child)
+    {
+        display: none;
+    }
+    .container h1{
+        margin-bottom: 38px;
+
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 34px;
+
+
+
+    }
+    .main_ul li img
+    {
+        width: 180px;
+        height: 29px;
+    }
+
+    .catalog{
+        justify-content: center;
+    }
+    .catalog>div{
+        margin-top: -9px;
+        width: 270px;
+        height: 380px;
+        margin-bottom: 39px;
+    }
+
+    .catalog_image .img>img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+    .container ul.main_ul{
+        justify-content: space-around;
+        margin-top: -7px;
+
+
+    }
+    .catalog_image> div.price{
+
+        bottom:64px;
+    }
+    .catalog_image>button{
+        bottom: 10px;
+    }
+    .catalog_image div.text{
+        margin-top: -5px;
+
+    }
+    .container ul.main_ul ul li img{
+        width: 180px;
+        height: 30px;
+
+    }
+}
+
+
+
+

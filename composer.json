@@ -1,0 +1,15 @@
+{
+    "name": "vender/app",
+    "description": "Project for Lider_Poiska",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Oleg Uvarov",
+            "email": "nachalnikOVK@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    }
+}
